@@ -1,0 +1,139 @@
+```css
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f8f2;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background-color: #ffcbcb;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* NAVIGASI */
+nav {
+    background-color: #ffbaba;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb5b5;
+}
+
+/* KONTEN UTAMA */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #ffb6b6;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #ffb5b5;
+    margin: 15px 0 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+/* GAMBAR */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    color: #666;
+    font-size: 14px;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ffbaba;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #ffc0c0;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ffbebe;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
