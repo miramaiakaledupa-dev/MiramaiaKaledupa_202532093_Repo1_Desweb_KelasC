@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Pengamatan - Jejak Ekosistem Kota</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Formulir Pengamatan Ruang Hijau</h1>
+        <p>Bagikan hasil pengamatan lingkungan perkotaan.</p>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="observasi.html">Panduan Observasi</a></li>
+            <li><a href="kontribusi.html">Kirim Pengamatan</a></li>
+        </ul>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <section>
+            <h2>Formulir Data Pengamatan</h2>
+
+            <p>
+                Silakan isi formulir berikut untuk mencatat
+                hasil pengamatan ruang hijau di lingkungan kota.
+            </p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Identitas Pengamat</legend>
+
+                    <p>
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text"
+                               id="nama"
+                               name="nama"
+                               required
+                               minlength="2">
+                    </p>
+
+                    <p>
+                        <label for="email">Alamat Email:</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="lokasi">Lokasi Pengamatan:</label>
+                        <input type="text"
+                               id="lokasi"
+                               name="lokasi"
+                               required>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Objek yang Diamati</legend>
+
+                    <p>
+                        <input type="radio"
+                               id="tanaman"
+                               name="objek"
+                               value="tanaman"
+                               required>
+
+                        <label for="tanaman">Tanaman</label>
+                    </p>
+
+                    <p>
+                        <input type="radio"
+                               id="satwa"
+                               name="objek"
+                               value="satwa">
+
+                        <label for="satwa">Satwa</label>
+                    </p>
+
+                    <p>
+                        <input type="radio"
+                               id="fasilitas"
+                               name="objek"
+                               value="fasilitas">
+
+                        <label for="fasilitas">Fasilitas Lingkungan</label>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Catatan Pengamatan</legend>
+
+                    <p>
+                        <label for="catatan">
+                            Tuliskan hasil pengamatan:
+                        </label>
+                    </p>
+
+                    <textarea id="catatan"
+                              name="catatan"
+                              rows="5"
+                              cols="40"
+                              required></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Kirim Pengamatan</button>
+
+                <button type="reset">Hapus Formulir</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Praktikum Desain Web - Jejak Ekosistem Kota</p>
+        <p>&copy; 2026</p>
+    </footer>
+
+</body>
+</html>
